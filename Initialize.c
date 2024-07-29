@@ -17,6 +17,13 @@ int main()
     {
         printf("Roll Number %d: %d\n", i, marks[i]);
     }
+    double average = 0.0;
+    for (int i = 1; i <= 30; i++)
+    {
+        average += marks[i];
+    }
+    average /= 30.0;
+    printf("Average marks: %.2lf\n", average);
 
     return 0;
 }
